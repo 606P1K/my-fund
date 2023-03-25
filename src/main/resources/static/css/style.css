@@ -1,0 +1,25 @@
+h1,h2,h5{
+    color: #ffcd27;
+}
+
+p,hr{
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.navbar__phone {
+    text-decoration: none;
+    color: #ffcd27;
+}
+
+.phone-wrapper:hover .phone-icon {
+    animation: shake 0.5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    20% { transform: translate(-2px, -2px) rotate(-5deg); }
+    40% { transform: translate(2px, 2px) rotate(5deg); }
+    60% { transform: translate(-2px, 2px) rotate(-5deg); }
+    80% { transform: translate(2px, -2px) rotate(5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
