@@ -1,3 +1,8 @@
+body{
+    font-family: 'Golos Text',sans-serif;
+    background-color: #151516;
+}
+
 h1,h2,h5{
     color: #ffcd27;
 }
@@ -22,4 +27,48 @@ p,hr{
     60% { transform: translate(-2px, 2px) rotate(-5deg); }
     80% { transform: translate(2px, -2px) rotate(5deg); }
     100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.btn-xlg {
+    font-size: 1.2rem; /* Increase the font size */
+    height: 3.5rem; /* Increase the button height */
+    padding: 0.8rem 3.5rem; /* Increase the button padding */
+    color:#0a0a0a;
+}
+
+.page-link{
+    background-color: #151516;
+}
+
+.next{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.previous{
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.page-link{
+    color: white;
+}
+
+.bg-grey{
+    background-color: #333333;
+}
+
+.w-90{
+    width: 90%
+}
+
+.request-text{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 170%;
+}
+
+.card-img {
+    width: 100%;
+    object-fit: cover;
 }

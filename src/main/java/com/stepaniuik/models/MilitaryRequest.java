@@ -4,11 +4,14 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.web.multipart.MultipartFile;
 
-@Entity
+import java.io.File;
+import java.io.IOException;
+
+@Entity(name = "military_request")
 @Data
 @NoArgsConstructor
 public class MilitaryRequest {
@@ -22,15 +25,15 @@ public class MilitaryRequest {
     private String battalionNumber;
     private String company;
     private String fullNameOfCommander;
-    private String required;
+    private String whatRequired;
     private String currentLocation;
     private String fullNameOfContactPerson;
     private String phoneOfContactPerson;
-
+    private String pathToFile;
     public MilitaryRequest(String email, String fromWho,
                            String militaryUnitNumber, String unitName,
                            String battalionNumber, String company,
-                           String fullNameOfCommander, String required,
+                           String fullNameOfCommander, String whatRequired,
                            String currentLocation, String fullNameOfContactPerson,
                            String phoneOfContactPerson) {
         this.email = email;
@@ -40,9 +43,19 @@ public class MilitaryRequest {
         this.battalionNumber = battalionNumber;
         this.company = company;
         this.fullNameOfCommander = fullNameOfCommander;
-        this.required = required;
+        this.whatRequired = whatRequired;
         this.currentLocation = currentLocation;
         this.fullNameOfContactPerson = fullNameOfContactPerson;
         this.phoneOfContactPerson = phoneOfContactPerson;
+    }
+
+    public void saveFile(MultipartFile file) throws IOException {
+        pathToFile = "Файл відсутній";
+
+        if(!file.isEmpty()) {
+            pathToFile = "D:/Унік/Web/CourseWork/src/main/resources/files/" + file.getOriginalFilename();
+            File newFile = new File(pathToFile);
+            file.transferTo(newFile);
+        }
     }
 }
