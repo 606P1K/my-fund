@@ -29,13 +29,6 @@ p,hr{
     100% { transform: translate(0, 0) rotate(0deg); }
 }
 
-.btn-xlg {
-    font-size: 1.2rem; /* Increase the font size */
-    height: 3.5rem; /* Increase the button height */
-    padding: 0.8rem 3.5rem; /* Increase the button padding */
-    color:#0a0a0a;
-}
-
 .page-link{
     background-color: #151516;
 }
