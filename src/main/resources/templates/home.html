@@ -11,126 +11,135 @@
     <div th:insert="~{blocks/navbar :: navbar}"></div>
 
     <div class="container marketing mt-3">
+        <!--Start Section-->
+        <div class="start-section">
+            <h1 class="fw-bold text-center display-4">Благодійний фонд<br><span class="text-white">Левів на джипі</span></h1>
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-8 offset-md-2">
+                    <video class="img-fluid rounded my-video" controls>
+                      <source src="/files/LNJ%20FOND%20SITE.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
 
-        <h1 class="fw-bold text-center display-4">Благодійний фонд<br><span class="text-white">Левів на джипі</span></h1>
-        <div class="container">
-            <div class="row">
-              <div class="col-md-8 offset-md-2">
-                <video class="img-fluid rounded my-video" controls>
-                  <source src="./other/LNJ%20FOND%20SITE.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-
-              </div>
+                  </div>
+                </div>
             </div>
-          </div>
-
+        </div>
         <hr class="featurette-divider" id="About">
+        <!--How the fund started work Section-->
+        <div class="start-of-fund">
+            <div class="row gx-4">
+                <div class="col-md-4 d-flex justify-content-center align-items-center flex-column">
+                    <h2 class="fw-bold">Як фонд почав роботу?</h2>
+                    <p class="lead">Фонд почав роботу після багаторазових особистих звернень про допомогу від підписників до хлопців.</p>
+                    <a href="#donate" class="btn btn-warning btn-lg mb-5 w-100 fw-bold">Зробити донат</a>
+                </div>
 
-        <div class="row gx-4">
-            <div class="col-md-4 d-flex justify-content-center align-items-center flex-column">
-                <h2 class="fw-bold">Як фонд почав роботу?</h2>
-                <p class="lead">Фонд почав роботу після багаторазових особистих звернень про допомогу від підписників до хлопців.</p>
-                <a href="#donate" class="btn btn-warning btn-lg mb-5 w-100 fw-bold">Зробити донат</a>
-            </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 bg-grey">
+                        <div class="img-container">
+                            <img src="https://global-uploads.webflow.com/62e7a3da122bd8a3238c43c2/62e7a3da122bd8070e8c441f_Rectangle%201822.webp"
+                                 class="card-img-top img-fluid" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-white">Наш фокус</h5>
+                            <p class="card-text">Ми взяли на себе обов’язок забезпечувати бійців саме <span class="fw-bold">першої лінії фронту,</span> а також бійців гарячих точок.</p>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 bg-grey">
-                    <div class="img-container">
-                        <img src="https://global-uploads.webflow.com/62e7a3da122bd8a3238c43c2/62e7a3da122bd8070e8c441f_Rectangle%201822.webp"
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 bg-grey">
+                        <img src="https://global-uploads.webflow.com/62e7a3da122bd8a3238c43c2/62e7a3da122bd87fff8c4438_Rectangle%201823.webp"
                              class="card-img-top img-fluid" alt="...">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold text-white">Наш фокус</h5>
-                        <p class="card-text">Ми взяли на себе обов’язок забезпечувати бійців саме <span class="fw-bold">першої лінії фронту,</span> а також бійців гарячих точок.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 mb-4">
-                <div class="card h-100 bg-grey">
-                    <img src="https://global-uploads.webflow.com/62e7a3da122bd8a3238c43c2/62e7a3da122bd87fff8c4438_Rectangle%201823.webp"
-                         class="card-img-top img-fluid" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold text-white">Прямі контакти</h5>
-                        <p class="card-text">Ведемо пряму комунікацію безпосередньо з ротними, взводними, батальйонами, командирами та <span class="fw-bold">забезпечуємо їх найнеобхіднішим.</span></p>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-white">Прямі контакти</h5>
+                            <p class="card-text">Ведемо пряму комунікацію безпосередньо з ротними, взводними, батальйонами, командирами та <span class="fw-bold">забезпечуємо їх найнеобхіднішим.</span></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <hr class="featurette-divider">
-
-        <div class="row my-5 text-center">
-            <h1 class="fw-bold">Команда Благодійного фонду</h1>
-            <div class="col-lg-4 d-flex flex-column align-items-center cener">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-                    <title>Placeholder</title><rect width="100%" height="100%" fill="#f0f5f9"></rect>
-                    <defs>
-                        <clipPath id="circleView">
-                            <circle cx="70" cy="70" r="70"/>
-                        </clipPath>
-                    </defs>
-                    <image style="z-index: -1;  position: absolute;bottom: 0;left: 0;width: 100%;height: auto;" 
-                    clip-path="url(#circleView)" width="140" height="140" xlink:href="other/Scan1.jpg" />
-                </svg>
-                <h2 class="fw-bold">Володимир Степанюк</h2>
-                <p>Засновник фонду та просто хороший чоловік.Також являється Front-end та Back-end розробником цього сайту.</p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4 d-flex flex-column align-items-center">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2 class="fw-bold">Інший персонал</h2>
-                <p>Гарний опис😀</p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4 d-flex flex-column align-items-center">
-                <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                <h2 class="fw-bold">Інший персонал</h2>
-                <p>Гарний опис😀</p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
+        <!--About Team Section-->
+        <div class="about-team">
+            <div class="row my-5 text-center">
+                <h1 class="fw-bold">Команда Благодійного фонду</h1>
+                <div class="col-lg-4 d-flex flex-column align-items-center cener">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title><rect width="100%" height="100%" fill="#f0f5f9"></rect>
+                        <defs>
+                            <clipPath id="circleView">
+                                <circle cx="70" cy="70" r="70"/>
+                            </clipPath>
+                        </defs>
+                        <image style="z-index: -1;  position: absolute;bottom: 0;left: 0;width: 100%;height: auto;"
+                        clip-path="url(#circleView)" width="140" height="140" xlink:href="/files/avatarOfDeveloper.jpg" />
+                    </svg>
+                    <h2 class="fw-bold">Володимир Степанюк</h2>
+                    <p>Засновник фонду та просто хороший чоловік.Також являється Front-end та Back-end розробником цього сайту.</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 d-flex flex-column align-items-center">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                    <h2 class="fw-bold">Інший персонал</h2>
+                    <p>Гарний опис😀</p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 d-flex flex-column align-items-center">
+                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                    <h2 class="fw-bold">Інший персонал</h2>
+                    <p>Гарний опис😀</p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        </div>
         <hr class="featurette-divider" id = "donate">
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title">Карточка 1</h5>
-                            <p class="card-text">Реквізити:</p>
-                            <div class="border border-secondary p-2 mb-2">
-                                <p class="m-0">Номер рахунку: 1234567890123456</p>
-                                <p class="m-0">ЄДРПОУ: 12345678</p>
-                                <p class="m-0">Назва банку: ПриватБанк</p>
-                                <button class="btn btn-outline-secondary mt-2" onclick="copyToClipboard('1234567890123456\n12345678\nПриватБанк')">Копіювати</button>
+        <!--Donate Section-->
+        <div class="donate-section">
+            <h1 class="fw-bold text-center display-4 text-white mb-3">Декілька способів донату в фонд</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card bg-dark text-white">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-white mb-2">Реквізити фонду:</h5>
+                                <p class="card-text">Реквізити фонду в LNJ (Гривні)</p>
+                                <div class="mb-3">
+                                    <button class="btn btn-outline-secondary flex-grow-1 h-100 w-100" onclick="copyToClipboard('UA713220010000026006420000559')">UA713220010000026006420000559</button>
+                                </div>
+                                <p class="card-text mb-2">Реквізити фонду LNJ (Євро)</p>
+                                <div class="">
+                                    <button class="btn btn-outline-secondary flex-grow-1 h-100 w-100" onclick="copyToClipboard('UA083220010000026006930000630')">UA083220010000026006930000630</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title">Карточка 2</h5>
-                            <p class="card-text">Реквізити:</p>
-                            <div class="border border-secondary p-2 mb-2">
-                                <p class="m-0">Номер рахунку: 9876543210987654</p>
-                                <p class="m-0">ЄДРПОУ: 87654321</p>
-                                <p class="m-0">Назва банку: Ощадбанк</p>
-                                <button class="btn btn-outline-secondary mt-2" onclick="copyToClipboard('9876543210987654\n87654321\nОщадбанк')">Копіювати</button>
+                    <div class="col-md-6 mb-4">
+                        <div class="card bg-dark text-white">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-white mb-2">Донат гривнею</h5>
+                                <p class="card-text">Monobank</p>
+                                <div class="mb-3">
+                                    <button class="btn btn-outline-secondary flex-grow-1 h-100 w-100" onclick="copyToClipboard('4441114454939693')">4441114454939693</button>
+                                </div>
+                                <p class="card-text mb-2">Privat Bank</p>
+                                <div class="">
+                                    <button class="btn btn-outline-secondary flex-grow-1 h-100 w-100" onclick="copyToClipboard('5168752004163419')">5168752004163419</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12 mb-4">
-                    <div class="card bg-dark text-white">
-                        <div class="card-body">
-                            <h5 class="card-title">Карточка 3</h5>
-                            <p class="card-text">Реквізити:</p>
-                            <div class="border border-secondary p-2 mb-2">
-                                <p class="m-0">Номер рахунку: 5555555555555555</p>
-                                <p class="m-0">ЄДРПОУ: 55555555</p>
-                                <p class="m-0">Назва банку: Альфа-банк</p>
-                                <button class="btn btn-outline-secondary mt-2" onclick="copyToClipboard('5555555555555555\n55555555\nАльфа-банк')">Копіювати</button>
+                    <div class="col-md-6 mx-auto mb-4">
+                        <div class="card bg-dark text-white">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold text-white mb-2">Донат криптовалютою (USDT)</h5>
+                                <p class="card-text">В мережі ERC20</p>
+                                <div class="mb-3">
+                                    <button class="btn btn-outline-secondary flex-grow-1 h-100 w-100" onclick="copyToClipboard('0x760fbf6fd296ea74577e6168e9862f46abd27af4')">0x760fbf6fd296ea74577e6168e9862f46abd27af4</button>
+                                </div>
+                                <p class="card-text">В мережі TRC20</p>
+                                <div class="">
+                                    <button class="btn btn-outline-secondary flex-grow-1 h-100 w-100" onclick="copyToClipboard('TTithmJVtUXTtSH5x6aggt5LQQYUmahoC9')">TTithmJVtUXTtSH5x6aggt5LQQYUmahoC9</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -139,25 +148,28 @@
         </div>
 
         <hr class="featurette-divider">
+        <!--Request Section-->
+        <div class="request-section">
+            <h1 class="fw-bold text-center display-4 text-white">Подати офіційний запит</h1>
 
-        <div class="card bg-dark text-white w-auto">
-            <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="https://global-uploads.webflow.com/62e7a3da122bd8a3238c43c2/62e7a3da122bd83f068c441c_Rectangle%201815.webp" class="card-img h-100" alt="...">
-                </div>
-                <div class="col-md-7 rounded-end bg-grey">
-                    <div class="card-body">
-                        <h3 class="card-title fw-bold text-white mt-4 ps-5">Заповніть форму, <br> щоб залишити заявку</h3>
-                        <p class="card-text text-gray mt-3 request-text ps-5" style="margin-bottom: 70px">Натисніть на кнопку і заповніть гугл форму, щоб ми опрацювали вашу заявку про допомогу</p>
-                        <div class="d-flex justify-content-center">
-                            <a href="/request" class="btn btn-warning btn-lg w-90 fw-bold text-center">Заповнити форму</a>
+            <div class="card bg-dark text-white w-auto mb-3">
+                <div class="row g-0">
+                    <div class="col-md-5">
+                        <img src="https://global-uploads.webflow.com/62e7a3da122bd8a3238c43c2/62e7a3da122bd83f068c441c_Rectangle%201815.webp" class="card-img h-100" alt="...">
+                    </div>
+                    <div class="col-md-7 rounded-end bg-grey">
+                        <div class="card-body">
+                            <h3 class="card-title fw-bold text-white mt-4 ps-5">Заповніть форму, <br> щоб залишити заявку</h3>
+                            <p class="card-text text-gray mt-3 request-text ps-5" style="margin-bottom: 70px">Натисніть на кнопку і заповніть гугл форму, щоб ми опрацювали вашу заявку про допомогу</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="/request" class="btn btn-warning btn-lg w-90 fw-bold text-center">Заповнити форму</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-            <hr class="featurette-divider">
+        <hr class="featurette-divider">
 
     </div>
 

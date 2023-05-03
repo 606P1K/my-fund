@@ -13,8 +13,9 @@
     <div th:each="el : ${militaryRequests}">
         <div class="container mt-3 d-flex justify-content-center">
             <div class="col-md-8">
-                <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-                    <h2 th:text="${el.getFromWho()}"></h2>
+                <div class="h-100 p-5 bg-grey border rounded-3">
+                    <h2 th:text="${el.getMilitaryUnit().getFormation().getMilitaryFormationName()}" class="fw-bold"></h2>
+                    <h3 th:text="${el.getMilitaryUnit().getMilitaryUnitNumber()}" class="text-white"></h3>
                     <p th:text="${el.getWhatRequired()}"></p>
                 </div>
             </div>
@@ -38,17 +39,6 @@
             </li>
         </ul>
     </nav>
-
-    <!--    <div th:each="el:${militaryRequests}">-->
-<!--        <div class="container mt-3 d-flex justify-content-center">-->
-<!--            <div class="col-md-8">-->
-<!--                <div class="h-100 p-5 bg-body-tertiary border rounded-3">-->
-<!--                    <h2 th:text="${el.getFromWho()}"></h2>-->
-<!--                    <p th:text="${el.getRequired()}"></p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
 
     <div th:insert="~{blocks/footer :: footer}"></div>
 

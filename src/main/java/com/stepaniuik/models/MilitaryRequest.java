@@ -17,34 +17,21 @@ public class MilitaryRequest {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String email;
-    private String fromWho;
-    private String militaryUnitNumber;
-    private String unitName;//Brigade number or unit name
-    private String battalionNumber;
-    private String company;
-    private String fullNameOfCommander;
     private String whatRequired;
-    private String currentLocation;
-    private String fullNameOfContactPerson;
-    private String phoneOfContactPerson;
     private String pathToFile;
-    public MilitaryRequest(String email, String fromWho,
-                           String militaryUnitNumber, String unitName,
-                           String battalionNumber, String company,
-                           String fullNameOfCommander, String whatRequired,
-                           String currentLocation, String fullNameOfContactPerson,
-                           String phoneOfContactPerson) {
+    @ManyToOne
+    @JoinColumn(name = "military_unit_id")
+    private MilitaryUnit militaryUnit;
+    @ManyToOne
+    @JoinColumn(name = "person_id")
+    private ContactPerson person;
+
+    public MilitaryRequest(String email, String whatRequired,
+                           MilitaryUnit militaryUnit, ContactPerson person) {
         this.email = email;
-        this.fromWho = fromWho;
-        this.militaryUnitNumber = militaryUnitNumber;
-        this.unitName = unitName;
-        this.battalionNumber = battalionNumber;
-        this.company = company;
-        this.fullNameOfCommander = fullNameOfCommander;
         this.whatRequired = whatRequired;
-        this.currentLocation = currentLocation;
-        this.fullNameOfContactPerson = fullNameOfContactPerson;
-        this.phoneOfContactPerson = phoneOfContactPerson;
+        this.militaryUnit = militaryUnit;
+        this.person = person;
     }
 
     public void saveFile(MultipartFile file) throws IOException {
