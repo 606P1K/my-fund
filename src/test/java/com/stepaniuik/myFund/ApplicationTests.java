@@ -1,10 +1,10 @@
-package com.stepaniuik.registrationform;
+package com.stepaniuik.myFund;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RegistrationFormApplicationTests {
+class ApplicationTests {
 
     @Test
     void contextLoads() {
