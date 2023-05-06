@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.stepaniuik</groupId>
-    <artifactId>registrationForm</artifactId>
+    <artifactId>CourseWork</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>registrationForm</name>
-    <description>registrationForm</description>
+    <name>CourseWork</name>
+    <description>CourseWork</description>
     <properties>
         <java.version>19</java.version>
     </properties>
@@ -77,11 +77,6 @@
             <optional>true</optional>
         </dependency>
 
-        <!-- security -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.boot</groupId>-->
-<!--            <artifactId>spring-boot-starter-security</artifactId>-->
-<!--        </dependency>-->
         <!--thymeleaf-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
