@@ -12,3 +12,12 @@
   <li>HTML</li>
   <li>CSS</li>
 </ul>
+
+<h3>Some images:</h3>
+
+![image](https://user-images.githubusercontent.com/96189250/236628573-9033efbf-4fc4-46b0-8eec-d89abfa1fedb.png)
+![image](https://user-images.githubusercontent.com/96189250/236628676-d6c78801-ddef-44a8-b9d5-0b97fd86ced9.png)
+![image](https://user-images.githubusercontent.com/96189250/236628707-9e656f65-7196-4a29-970a-31e986d0aa56.png)
+![image](https://user-images.githubusercontent.com/96189250/236628853-f5a26b07-453e-4af2-ba0f-0f0401bb9eb2.png)
+![image](https://user-images.githubusercontent.com/96189250/236628878-689896a4-d5ff-422f-a778-f73ae3bb0799.png)
+
