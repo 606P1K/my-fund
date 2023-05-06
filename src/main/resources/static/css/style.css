@@ -3,11 +3,11 @@ body{
     background-color: #151516;
 }
 
-h1,h2,h5{
+h1,h2,h5,.what-needed{
     color: #ffcd27;
 }
 
-p,hr,.footer-grey-color{
+p,hr,.footer-grey-color,label{
     color: hsla(0, 0%, 100%, 0.5);
 }
 

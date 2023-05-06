@@ -18,7 +18,7 @@ public class VolunteerController {
     private MilitaryRequestRepository repository;
     @GetMapping
     public String volunteerRequest(@RequestParam(defaultValue = "0") int page, Model model) {
-        int pageSize = 5;
+        int pageSize = 3;
         Page<MilitaryRequest> militaryRequests = repository.findAll(PageRequest.of(page, pageSize));
 
         model.addAttribute("militaryRequests", militaryRequests.getContent());
