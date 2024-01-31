@@ -13,7 +13,7 @@
   <li>CSS</li>
 </ul>
 
-<h3>Some images:</h3>
+<h2>Some images:</h2>
 
 ![image](https://user-images.githubusercontent.com/96189250/236628573-9033efbf-4fc4-46b0-8eec-d89abfa1fedb.png)
 ![image](https://user-images.githubusercontent.com/96189250/236628676-d6c78801-ddef-44a8-b9d5-0b97fd86ced9.png)
